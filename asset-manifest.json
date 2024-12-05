@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cuahang/static/css/main.5bc1a392.css",
+    "main.js": "/cuahang/static/js/main.5d0d2a22.js",
+    "index.html": "/cuahang/index.html",
+    "main.5bc1a392.css.map": "/cuahang/static/css/main.5bc1a392.css.map",
+    "main.5d0d2a22.js.map": "/cuahang/static/js/main.5d0d2a22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bc1a392.css",
+    "static/js/main.5d0d2a22.js"
+  ]
+}
