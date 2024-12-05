@@ -1,0 +1,521 @@
+/* src/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: #fff; /* Màu xám sáng */
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.home-page {
+  padding: 20px;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f80ed;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #1d66c1;
+  transform: scale(1.05);
+}
+
+.product-card button:active {
+  background-color: #1a5b96;
+  transform: scale(1);
+}
+
+/* Optional: Focus for accessibility */
+.product-card button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 3px rgba(47, 128, 237, 0.7);
+}
+
+/* Phần Header */
+.header-container {
+  background-image: url("https://concung.com/img/news/2023/2116-1673937606-cover.png");
+  background-size: cover; /* Đảm bảo hình nền phủ kín phần header */
+  background-position: center center; /* Căn chỉnh hình nền ở giữa */
+  background-attachment: fixed; /* Nền không di chuyển khi cuộn trang */
+  color: white; /* Màu chữ */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation menu */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách mặc định giữa các nút (trên máy tính) */
+  flex-wrap: nowrap; /* Đảm bảo các nút luôn nằm trên cùng một hàng */
+}
+
+/* Các liên kết trong nav */
+nav a {
+  color: white; /* Màu chữ của các liên kết */
+  text-decoration: none; /* Bỏ gạch dưới */
+  font-weight: bold; /* Chữ đậm */
+  padding: 10px 15px; /* Thêm khoảng đệm xung quanh chữ */
+  border-radius: 25px; /* Bo tròn góc cho các nút */
+  background-color: rgba(0, 0, 0, 0.3); /* Màu nền ban đầu (màu nền mờ) */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+/* Màu nền khi hover */
+nav a:hover {
+  background-color: rgba(47, 128, 237, 0.7); /* Màu nền khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Màu nền khi nhấn */
+nav a:active {
+  background-color: rgba(47, 128, 237, 1); /* Màu nền khi nhấn */
+  transform: scale(1); /* Khôi phục kích thước khi nhấn */
+}
+
+/* Phần responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 15px; /* Điều chỉnh padding trên các màn hình nhỏ */
+  }
+
+  nav {
+    gap: 15px; /* Khoảng cách giữa các nút trên máy tính bảng */
+  }
+
+  nav a {
+    padding: 10px 12px; /* Điều chỉnh padding cho các liên kết trên màn hình nhỏ */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    gap: 10px; /* Giảm khoảng cách giữa các nút trên điện thoại nhỏ */
+    flex-direction: column; /* Chuyển đổi từ hàng ngang sang cột trên điện thoại nhỏ */
+  }
+
+  nav a {
+    padding: 8px 12px; /* Điều chỉnh padding cho các liên kết trên điện thoại nhỏ */
+    font-size: 14px; /* Giảm kích thước chữ trên điện thoại nhỏ */
+  }
+}
+
+/* src/styles.css */
+.new-home-page {
+  padding: 20px;
+}
+
+.new-home-page h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.new-home-page .intro-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new-home-page .categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.new-home-page .category {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.new-home-page .shop-now {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.new-home-page .shop-now button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.new-home-page .shop-now button:hover {
+  background-color: #4b6cf5;
+}
+/* Phần chung cho trang */
+.new-home-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Phần giới thiệu cửa hàng */
+.intro-section {
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.intro-section h1 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Phần các danh mục sản phẩm */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.category {
+  width: 30%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.category p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.shop-now {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.shop-now h2 {
+  font-size: 1.8rem;
+  color: #1e8a74;
+}
+
+.shop-now p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.shop-now button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shop-now button:hover {
+  background-color: #45a049;
+}
+
+/* Phần đăng nhập */
+.login-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-section h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Nền cho toàn bộ trang */
+.home-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8c8e8; /* Màu nền sáng cho trang */
+  min-height: 100vh; /* Đảm bảo trang có chiều cao đủ */
+  padding: 20px;
+}
+
+/* Chỉnh màu chữ cho tiêu đề h1 */
+.home-page .intro-section h1 {
+  font-size: 2.8rem; /* Tăng kích thước chữ */
+  color: #47ffd1; /* Màu cam đỏ cho chữ */
+  font-weight: bold; /* Làm đậm chữ */
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  font-family: "Arial", sans-serif; /* Font chữ hiện đại */
+}
+
+/* Chỉnh màu chữ cho đoạn văn p */
+.home-page .intro-section p {
+  font-size: 1.9rem; /* Kích thước chữ hợp lý */
+  color: #1d2da9; /* Màu xám cho chữ */
+  text-align: center; /* Căn giữa đoạn văn */
+}
+
+/* Phần giới thiệu các danh mục sản phẩm */
+.categories {
+  display: flex;
+  justify-content: space-around; /* Căn đều các mục */
+  margin-top: 30px;
+}
+
+.category {
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.category h3 {
+  font-size: 20px;
+  color: #ff6f61; /* Màu chữ cho tiêu đề danh mục */
+}
+
+/* Thay đổi màu chữ cho các mục cụ thể nếu cần */
+.category:nth-child(1) p {
+  color: #2600ff; /* Màu vàng cam cho "Sữa Cho Bé" */
+  font-size: 14px;
+}
+
+.category:nth-child(2) p {
+  color: #008080;
+  font-size: 16px; /* Màu xanh ngọc cho "Đồ Chơi" */
+}
+
+.category:nth-child(3) p {
+  color: #4682b4; /* Màu xanh dương cho "Quần Áo" */
+  font-size: 16px;
+}
+/* Đảm bảo rằng các liên kết trong thanh điều hướng được căn chỉnh đẹp */
+.header-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Căn chỉnh giỏ hàng và số lượng sản phẩm */
+.cart-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-link-container a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Khoảng cách giữa chữ "Giỏ Hàng" và số lượng */
+  text-decoration: none; /* Xóa gạch chân */
+  color: black; /* Màu chữ */
+}
+
+/* Đảm bảo rằng các liên kết trong thanh điều hướng được căn chỉnh đẹp */
+.header-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Căn chỉnh giỏ hàng và số lượng sản phẩm */
+.cart-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-link-container a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Khoảng cách giữa chữ "Giỏ Hàng" và số lượng */
+  text-decoration: none; /* Xóa gạch chân */
+  color: black; /* Màu chữ */
+}
+
+/* Đảm bảo rằng các liên kết trong thanh điều hướng được căn chỉnh đẹp */
+.header-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Căn chỉnh giỏ hàng và số lượng sản phẩm */
+.cart-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-link-container a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Khoảng cách giữa chữ "Giỏ Hàng" và số lượng */
+  text-decoration: none; /* Xóa gạch chân */
+  color: black; /* Màu chữ */
+}
+
+/* Tạo kiểu cho badge số lượng sản phẩm */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: black;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page .intro-section {
+  background-color: #f0f0f0; /* Màu xám nhạt */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.home-page .login-section {
+  background-color: #f0f0f0; /* Màu xám nhạt */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
